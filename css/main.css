@@ -6,6 +6,9 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+
+
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #d7e604;
@@ -2948,3 +2951,35 @@ h6 {
 .switch-wrap p {
   margin: 0;
 }
+
+.quote-of-the-day {
+    background: #000000;
+    border-left: 4px solid #d0dd07;
+    color: white;
+    border-radius: 15px;
+
+    /* Base soft glow */
+    box-shadow: 0 0 18px 4px yellow;
+
+    /* Smooth subtle flicker */
+    animation: softFlicker 1.2s infinite ease-in-out alternate;
+}
+
+@keyframes softFlicker {
+    0% {
+        box-shadow: 0 0 14px 3px rgba(255, 255, 0, 0.7);
+    }
+    25% {
+        box-shadow: 0 0 16px 4px rgba(255, 255, 80, 0.75);
+    }
+    50% {
+        box-shadow: 0 0 13px 3px rgba(255, 255, 50, 0.6);
+    }
+    75% {
+        box-shadow: 0 0 17px 4px rgba(255, 255, 100, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 15px 3px rgba(255, 255, 0, 0.7);
+    }
+}
+
